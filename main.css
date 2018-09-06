@@ -1,0 +1,13 @@
+#jumbo {
+    text-align: center;
+}
+.col {
+    height: 30px;
+    border: solid black 1px;
+}
+.row {
+    margin: 6px;
+}
+button {
+    margin: 6px;
+}
