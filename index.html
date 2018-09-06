@@ -13,6 +13,30 @@
 <script src="main.js"></script>
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="></script>
+  <script>
+  var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+  url += '?' + $.param({
+    'api-key': "044cbe502efe490ca052a2417541cd22"
+    });
+
+    $.ajax({
+        url: url,
+        method: 'GET',
+    }).then(function(result) {
+        console.log(result);
+    }).fail(function(err) {
+        throw err;
+    });
+
+    for (var i = 0; i < response.docs.length; i++) {
+
+    var headlines = response.docs[i].headlines;
+    console.log(headlines):
+
+    }
+
+
+    </script>
 </html>
